@@ -1,0 +1,47 @@
+<template name="editYourAvatarModal">
+    {{!Copyright 2013 Play Sports Live}}
+    <div id="editYourAvatarModal" aria-hidden="true" aria-labelledby="editYourAvatarModalLabel" class="modal fade psl-modal" role="dialog" tabindex="-1">
+        <div class="modal-dialog w-modal0">
+            <div class="modal-content modal-radius">
+                <div class="modal-header">
+                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+                    <h4 id="editYourAvatarModalLabel" class="modal-title md-title">Edit Your Avatar</h4>
+                </div>
+
+                <div class="modal-body">
+                    {{> editYourAvatarModalBody}}
+                </div>
+
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-9 error"></div>
+                        <div class="col-md-3">
+                            <input type="button" id="saveAvatarButton" class="btn btn-modal btn-psl-modal pull-right col-lg-12" value="SAVE"/>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </div>{{!editYourAvatarModal}}
+</template>
+
+<template name="editYourAvatarModalBody">
+    <div class="row">
+        <div class="col-md-9">
+            <img id="realImage" src="{{ image }}" class="hide" alt="" />
+            <img id="avatarUserImg" src="{{ image }}" class="" alt="" />
+
+            <input type="file" name="avatarFile" class="hide" />
+            <input type="button" id="changeAvatarButton" value="Change My Avatar" />
+        </div>
+
+        <div class="col-md-3">
+            <div id="previewFrame" class="hide">
+                <div id="preview">
+                    <img src="{{ image }}"/>
+                </div>
+             </div>
+        </div>
+    </div>
+</template>
