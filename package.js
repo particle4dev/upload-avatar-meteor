@@ -9,7 +9,7 @@ var server = ['server'];
 
 Package.on_use(function (api) {
     api.use(['underscore', 'accounts-base'], both);
-    api.use(['jquery'], client);
+    api.use(['jquery', 'templating'], client);
 
     //add file
     api.add_files([
