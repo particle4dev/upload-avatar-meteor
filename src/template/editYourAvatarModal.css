@@ -1,0 +1,38 @@
+/***
+ editYourAvatarModal
+ */
+
+#realImage {
+  display: block;
+  margin: 0px;
+}
+
+#avatarUserImg {
+  display: block;
+  margin: 0px;
+  max-width: 550px;
+  margin: 0 0 10px 0;
+}
+
+#previewFrame {
+  margin: 0 1em;
+  width: 128px;
+  height: 128px;
+}
+
+#previewFrame #preview {
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+}
+
+#previewFrame #preview img {
+  width: 100%;
+  height: auto;
+}
+
+.w-modal0 {
+width: 70% !important;
+margin-left: auto !important;
+margin-right: auto !important;
+}

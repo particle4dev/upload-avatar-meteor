@@ -23,7 +23,8 @@ Package.on_use(function (api) {
         'src/vendor/imgareaselect/jquery.imgareaselect.pack.js',
         'src/client.js',
         'src/template/editYourAvatarModal.html',
-        'src/template/editYourAvatarModal.js'
+        'src/template/editYourAvatarModal.js',
+        'src/template/editYourAvatarModal.css'
     ], client);
 
     api.add_files([

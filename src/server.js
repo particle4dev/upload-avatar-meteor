@@ -7,7 +7,7 @@ Meteor.methods({
         try {
             validateImgBase64(base64);
             return Meteor.users.update({_id: id},
-                {$set: {'profile.image': path, 'profile.upgraded': new Date()}}
+                {$set: {'profile.image': base64, 'profile.upgraded': new Date()}}
             );
         }
         catch(e){

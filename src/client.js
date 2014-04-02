@@ -1,4 +1,4 @@
-FileReader = {
+FileReaderObject = {
     previewImage: function(file, callback){
         var reader = new FileReader();
         reader.onload = function (e) {

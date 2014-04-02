@@ -55,7 +55,7 @@ Template.editYourAvatarModalBody.events({
         evt.preventDefault();
         var input = tmpl.find('input[name=avatarFile]');
         if(input.files && input.files[0]){
-            FileReader.previewImage(input.files[0], function(err, file){
+            FileReaderObject.previewImage(input.files[0], function(err, file){
                 if (err){
                     error.html(createAlertDanger(err.message));
                     Meteor.setTimeout(function(){
