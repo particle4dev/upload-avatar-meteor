@@ -1,0 +1,8 @@
+{
+  "name": "upload-avatar",
+  "description": "upload avatar plugin using bootstrap3 and jQuery",
+  "homepage": "https://github.com/particle4dev/upload-avatar-meteor",
+  "author": "Le Hoang (https://github.com/particle4dev)",
+  "version": "0.1.0",
+  "git": "https://github.com/particle4dev/upload-avatar-meteor.git"
+}
