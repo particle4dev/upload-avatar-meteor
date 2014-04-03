@@ -36,7 +36,7 @@ Template.editYourAvatarModal.rendered = function(){
         loadImage(tmpl, Meteor.user().profile.image);
         $(function () {
             displayImage.imgAreaSelect({ aspectRatio: '1:1', handles: true,
-            fadeSpeed: 200, onSelectChange: preview });
+            fadeSpeed: 200, onSelectChange: preview, parent: $('.modal-content') });
         });
     });
 };
