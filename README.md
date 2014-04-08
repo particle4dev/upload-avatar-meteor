@@ -1,6 +1,6 @@
 ###
 Usage:
-mrt add upload-avatar-meteor
+mrt add upload-avatar
 ###
 Too lazy to write
 {{> editYourAvatarModal}}
