@@ -1,4 +1,7 @@
-###API
+###
+Usage:
+mrt add upload-avatar-meteor
+###
 Too lazy to write
 {{> editYourAvatarModal}}
 ###Demo
