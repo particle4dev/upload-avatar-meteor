@@ -13,7 +13,9 @@ Install Bootstrap and Account System
 ###
 $ mrt add bootstrap-3
 ###
-$ mrt add accounts-password
+$ mrt add accounts-base
+#
+$ mrt add account-password
 ###
 Install our Avatar-Upload packages
 ###
