@@ -15,12 +15,15 @@ isShowCropAndButton = false;
 var widthAvatar = 128,
 heightAvatar = 128;
 
-Template.editYourAvatarModalBody.image = function(){
-    if(Meteor.user())
-        return Meteor.user().profile.image
-    else
-        return AVATAR; 
-};
+Template.editYourAvatarModalBody.helpers({
+    image: function(){
+        if(Meteor.user())
+            return Meteor.user().profile.image
+        else
+            return AVATAR; 
+    }
+});
+
 Template.editYourAvatarModal.rendered = function(){
     var tmpl = this;
     // cache the dom

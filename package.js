@@ -1,5 +1,8 @@
 Package.describe({
-    summary: "upload avatar package for meteor"
+    summary: "simple upload avatar package for meteor",
+    version: "1.1.0",
+    name: "particle4dev:upload-avatar",
+    git: "https://github.com/particle4dev/upload-avatar-meteor.git"    
 });
 
 // meteor test-packages ./
@@ -8,8 +11,10 @@ var client = ['client'];
 var server = ['server'];
 
 Package.on_use(function (api) {
-    api.use(['underscore', 'accounts-base'], both);
-    api.use(['jquery', 'templating'], client);
+    api.versionsFrom("METEOR@0.9.3");
+
+    api.use(['underscore', 'accounts-base', 'accounts-password'], both);
+    api.use(['jquery', 'templating', 'mizzao:bootstrap-3@3.2.0_1'], client);
 
     //add file
     api.add_files([
