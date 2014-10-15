@@ -42,7 +42,7 @@ Package.on_use(function (api) {
 });
 
 Package.on_test(function (api) {
-  api.use(['upload-avatar','accounts-password','tinytest'], both);
+  api.use(['particle4dev:upload-avatar','accounts-password','tinytest'], both);
   api.add_files('tests/client.js', 'client');
   api.add_files('tests/server.js', 'server');
 });
