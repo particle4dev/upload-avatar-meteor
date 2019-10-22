@@ -1,3 +1,5 @@
+WARNING: This project is outdated and not maintained anymore.
+
 ### Install Meteor
     $ curl https://install.meteor.com | /bin/sh
 
